@@ -10,7 +10,7 @@ Installation
 
 To use install from git:
 
-    gem 'spree_imagezoom', :git => 'git://github.com/kunalchaudhari/spree_imagezoom.git'
+    gem 'spree_imagezoom', :git => 'git://github.com/twintags/spree_imagezoom.git'
 
 Now bundle up with:
 
