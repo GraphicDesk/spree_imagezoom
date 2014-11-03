@@ -1,4 +1,4 @@
-<a href='<%= @product.images.empty? ? (@product.variant_images.empty? ? "javascript:void(0)" : @product.variant_images.first.attachment.url(:large)) : @product.images.first.attachment.url(:large) %>' title='<%= @product.name %>' rel='product-gallery' class='<%= @product.images.empty? ? "spree_jqzoom" : "spree_jqzoom" %>'>
+<a href='<%= @product.images.empty? ? (@product.variant_images.empty? ? "javascript:void(0)" : @product.variant_images.first.attachment.url(:large)) : @product.images.first.attachment.url(:large) %>' title='<%= @product.name %>' rel='product-gallery' class='spree_jqzoom'>
   <%= render_original -%>
 </a>
 <div class='clearfix'></div>
