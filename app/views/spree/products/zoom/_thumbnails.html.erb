@@ -2,5 +2,5 @@
 <% if @product.images.empty? %>
 <%= link_to image_tag(i.attachment.url(:mini)), i.attachment.url(:product), :rel => "{gallery: 'product-gallery', smallimage: '"  + i.attachment.url(:product) + "',largeimage: '" + i.attachment.url(:original) + "'}" %>
 <% else %>
-<%= link_to image_tag(i.attachment.url(:mini)), @product.images.first.attachment.url(:product), :rel => "{gallery: 'product-gallery', smallimage: '"  + i.attachment.url(:product) + "',largeimage: '" + i.attachment.url(:original) + "'}", class: "(i.id == @product.images.first.id) ? 'zoomThumbActive' : ''" %>
+<%= link_to image_tag(i.attachment.url(:mini)), @product.images.first.attachment.url(:product), :rel => "{gallery: 'product-gallery', smallimage: '"  + i.attachment.url(:product) + "',largeimage: '" + i.attachment.url(:large) + "'}", class: "(i.id == @product.images.first.id) ? 'zoomThumbActive' : ''" %>
 <% end %>
