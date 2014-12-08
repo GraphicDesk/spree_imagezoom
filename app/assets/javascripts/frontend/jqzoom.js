@@ -650,7 +650,7 @@
                 scale.x = ($obj.w / smallimage.w);
                 scale.y = ($obj.h / smallimage.h);
                 el.scale = scale;
-                document.body.removeChild(this.node);
+                this.node.parentNode.removeChild(this.node);
                 $('.zoomWrapperImage', el).empty().append(this.node);
                 //setting lens dimensions;
                 lens.setdimensions();
